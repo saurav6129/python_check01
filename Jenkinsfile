@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '"C:\Users\Saurav\AppData\Local\Programs\Python\Python37\pythonw.exe" python test_Login.py'
+                sh python -m py_compile sources /test_Login.py '
             }
         }
 		
